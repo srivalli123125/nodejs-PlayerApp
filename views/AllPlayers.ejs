@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>First Player Details</title>
+  <link rel="shortcut icon" href="https://logos-world.net/wp-content/uploads/2021/11/WWE-Emblem.png" type="image/x-icon">
+  <link rel="stylesheet" href="/nodejs-player-app/Styles/index.css">
+</head>
+<body>
+  <h1 id="header"><span>First</span> Player Details</h1>
+  <div>
+    <% const firstPlayer = players[0]; %>
+    <% if (firstPlayer) { %>
+      <% if (firstPlayer.image) { %>
+        <img id="hero" src="<%= firstPlayer.image %>" alt="Player Image" width="100">
+      <% } %>
+      <div id="container-1">
+      <strong>Name:</strong> <%= firstPlayer.firstname %> <%= firstPlayer.lastname %><br>
+      <strong>Age:</strong> <%= firstPlayer.age %><br>
+      <strong>Team:</strong> <%= firstPlayer.team %><br>
+      <strong>Total Matches:</strong> <%= firstPlayer.totalMatches %><br>
+      <!-- Assuming player object has an _id property -->
+      <a id="btn-2" href="/api/player/<%= firstPlayer._id %>">Next Player</a>
+      </div>
+    <% } else { %>
+      <p>No players available.</p>
+    <% } %>
+  </div>
+</body>
+</html>
