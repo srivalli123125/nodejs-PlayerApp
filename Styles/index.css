@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Edo SZ;
+}
+::selection {
+    color: red;
+    background: #ffffff;
+  }
+body,
+html {
+    height: 100%;
+    width: 100%;
+    overflow-y: hidden;
+}
+
+#main {
+    height: 100%;
+    background: url("https://i0.wp.com/www.ewrestlingnews.com/wp-content/uploads/2023/01/wwe-2k23.jpg?fit=1920%2C1080&quality=89&ssl=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#title{
+    color: #FFFFFF;
+     font-weight: 300;
+     font-size: 6vw;
+     opacity: .9;
+     position: absolute;
+     top: 25vh;
+     left: 10vw;
+}
+#title>span{
+    color: #E40002;
+}
+
+#btn{
+    position: absolute;
+    font-size: 2vw;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    top: 65vh;
+    left: 18vw;
+    transition: all .5s;
+}
+#btn:hover{
+    scale: 1.2;
+    color: #E40002;
+}
+#hero{
+    position: absolute;
+    height: 100svh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+#header{
+    color: #FFFFFF;
+    position: absolute;
+    z-index: 2;
+    right: 1%;
+    top: 3vh;
+    font-size: 2vw;
+}
+#header>span{
+    color: #E40002;
+    opacity: .8;
+}
+#container{
+    position: absolute;
+    top: 65vh;
+    color: #FFFFFF;
+    z-index: 2;
+    scale: 4;
+    left: 20%;
+}
+#container-1{
+    position: absolute;
+    top: 65vh;
+    color: #FFFFFF;
+    z-index: 2;
+    scale: 4;
+    right: 20%;
+}
+strong{
+    color: #E40002;
+}
+#btn-2{
+    font-size: 1vw;
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    transition: all .5s;
+    line-height: 6vh;
+}
+#btn-2:hover{
+    color: #E40002;
+    scale: 2;
+}
+#no-player{
+    color: #E40002;
+}
